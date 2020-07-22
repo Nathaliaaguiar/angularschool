@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Usuario } from '../..models/usuario'
 
 @Component({
   selector: 'app-form-usuario',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormUsuarioComponent implements OnInit {
 
+  user: Usuario = new Usuario;
+  confpws: string = "";
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.user.ativo = true;
   }
 
+  onsubmit(form) {
+    console.log("Usuario:", this.user, "Formulario:", form);
+    if (form.invalid) {
+      alert("Erro")
+    } else {
+      alert("Cadastrado!")
+    }
+  }
 }
