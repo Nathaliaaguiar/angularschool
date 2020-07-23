@@ -11,7 +11,7 @@ import { PageHeaderComponent } from './page-header/page-header.component';
 import { FormUsuarioComponent } from './form-usuario/form-usuario.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
   declarations: [ AppComponent, HelloComponent, PageNavComponent, PageFooterComponent, PageHeaderComponent, FormUsuarioComponent, ],
   bootstrap:    [ AppComponent ]
 })
