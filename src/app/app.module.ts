@@ -8,10 +8,11 @@ import { PageNavComponent } from './page-nav/page-nav.component';
 import { PageFooterComponent } from './page-footer/page-footer.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { FormUsuarioComponent } from './form-usuario/form-usuario.component';
+import { PageHomeComponent } from './page-home/page-home.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, PageNavComponent, PageFooterComponent, PageHeaderComponent, FormUsuarioComponent ],
+  declarations: [ AppComponent, HelloComponent, PageNavComponent, PageFooterComponent, PageHeaderComponent, FormUsuarioComponent, PageHomeComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
