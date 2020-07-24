@@ -11,4 +11,21 @@ import { PageHeaderComponent } from './page-header/page-header.component';
 import { FormUsuarioComponent } from './form-usuario/form-usuario.component';
 import { PageHomeComponent } from './page-home/page-home.component';
 
-
+@NgModule({
+  declarations: [
+    AppComponent,
+    PageNavComponent,
+    PageHeaderComponent,
+    PageFooterComponent,
+    FormUsuarioComponent,
+    PageHomeComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
