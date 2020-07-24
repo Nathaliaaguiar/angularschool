@@ -11,9 +11,4 @@ import { PageHeaderComponent } from './page-header/page-header.component';
 import { FormUsuarioComponent } from './form-usuario/form-usuario.component';
 import { PageHomeComponent } from './page-home/page-home.component';
 
-@NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, PageNavComponent, PageFooterComponent, PageHeaderComponent, FormUsuarioComponent, PageHomeComponent, ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
+
