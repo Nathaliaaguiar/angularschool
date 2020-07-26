@@ -7,7 +7,7 @@
 
     <div class="form-group">
       <label for="email">E-mail</label>
-      <input type="email" class="form-control" id="email" [(ngModel)]="user.email" placeholder="Seu email" name="email" required=required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+      <input type="email" class="form-control" id="email" [(ngModel)]="user.email" placeholder="Seu email" name="email" required />
     </div>
 
     <div class="form-group">
@@ -28,5 +28,5 @@
       </button>
     </div>
   </form>
-  <!-- Nome:  {{user.nome}} {{user.ativo}} -->
+  <!-- Nome:  {{ user.nome }} {{user.ativo}} -->
 </section>
