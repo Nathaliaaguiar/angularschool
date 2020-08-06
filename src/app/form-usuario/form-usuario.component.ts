@@ -20,4 +20,21 @@ export class FormUsuarioComponent implements OnInit {
     this.user.ativo = true;
   }
 
-  
+   onsubmit(form) {
+    console.log("Usuario:", this.user, "Formulario:", form);
+    if (form.invalid) {
+      alert("Formulário invalido!");
+    } else {
+      this.userService.add(this.user).subscribe(
+        res => {
+          alert("Cadastrado!");
+          console.log(res);          
+        },
+        err => {
+          alert("Erro ao cadastrar!");
+          console.error(err);          
+        }
+      )
+    }
+  }
+}
